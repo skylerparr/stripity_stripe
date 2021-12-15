@@ -76,6 +76,7 @@ defmodule Stripe.Product do
                  :type => String.t(),
                  optional(:metadata) => Stripe.Types.metadata(),
                  optional(:statement_descriptor) => String.t(),
+                 optional(:tax_code) => String.t(),
                  optional(:unit_label) => String.t()
                }
                | %{}
