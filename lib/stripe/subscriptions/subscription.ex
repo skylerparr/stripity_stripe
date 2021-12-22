@@ -129,6 +129,7 @@ defmodule Stripe.Subscription do
         when params: %{
                :customer => Stripe.id() | Stripe.Customer.t(),
                optional(:application_fee_percent) => integer,
+               optional(:automatic_tax) => %{:enabled => boolean},
                optional(:billing_cycle_anchor) => Stripe.timestamp(),
                optional(:billing_thresholds) => map,
                optional(:collection_method) => String.t(),
